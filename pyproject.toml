@@ -1,0 +1,21 @@
+[project]
+name = "helpful-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rehmat786", email = "160276815+Rehmat778866@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.5.5",
+    "dotenv>=0.9.9",
+    "openai-agents>=0.0.19",
+]
+
+[project.scripts]
+helpful-agent = "helpful_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
